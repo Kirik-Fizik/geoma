@@ -1,0 +1,121 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    font-size: calc(.5em + 1vw);
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('graffiti.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.title {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.menu {
+    padding: .3em;
+    background-color: rgb(253, 116, 116);
+    font-size: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.menu div {
+    border-radius: .3em;
+    transition: .5s;
+    padding: .2em;
+}
+.menu div:hover {
+    background-color: rgb(167, 8, 8);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.smog {
+    position: fixed;
+    top: 3.5em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+
+
+.first {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+.second {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+.third {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.firsttask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.firsttask p {
+    border-radius: .3em;
+    font-size: .99rem;
+    margin: 1em;
+    padding: .3em;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+
+
+button {
+    color: white;
+    padding: .3em;
+    font-size: .97rem;
+    background-color: rgb(172, 0, 0);
+    border: 2px solid red;
+    border-radius: .3em;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    transform: scale(.98);
+}
+
+
+
+input {
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: .3em;
+    font-size: .99rem;
+}
+
+@media (max-width: 600px) {
+    body{
+        display: none;
+    }
+}
+
+
+
+
+
